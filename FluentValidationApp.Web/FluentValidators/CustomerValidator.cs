@@ -16,6 +16,7 @@ namespace FluentValidationApp.Web.FluentValidators
             RuleFor(x => x.Name).NotEmpty().WithMessage(NotEmptyMessage);
             RuleFor(x => x.Email).NotEmpty().WithMessage(NotEmptyMessage).EmailAddress().WithMessage("Email alanı doğru formatta olmalıdır.");
 
+
             RuleFor(x => x.Age).NotEmpty().WithMessage(NotEmptyMessage);
             RuleFor(x => x.BirthDay).NotEmpty().WithMessage(NotEmptyMessage).Must(x =>
             {

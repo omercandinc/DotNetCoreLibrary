@@ -13,6 +13,7 @@ namespace FluentValidationApp.Web.Models
 
         }
 
-        public DbSet<Customer> Customers {get; set;}
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Address> Addresses { get; set; }
     }
 }
